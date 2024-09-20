@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --very-dark-cyan: #002f34;
+  --dark-grayish-cyan: #5e7a7d;
+  --grayish-cyan: #8b9c9e;
+  --light-grayish-cyan: #c5e4e7;
+  --very-light-grayish-cyan: #f4fafa;
+  --White: #ffffff;
+  --strong-cyan: #26b48f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+.display {
+  display: none;
+}
+
+.active {
+  background-color: var(--strong-cyan);
+}

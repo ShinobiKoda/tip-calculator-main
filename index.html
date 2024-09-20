@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Tip Calculator</title>
+  </head>
+  <body class="bg-[#c5e4e7] w-full h-[100vh] bg-full">
+    <main class="w-full h-full">
+      <div
+        class="flex flex-col gap-5 w-full h-full items-center justify-center"
+      >
+        <img src="./assets/images/logo.svg" alt="" class="mt-16" />
+        <div
+          class="bg-white rounded-2xl flex md:flex-row flex-col gap-4 w-full px-6 py-8 max-w-[800px] m-auto"
+        >
+          <div class="flex flex-col gap-8 flex-1">
+            <div class="flex flex-col">
+              <label for="bill">Bill</label>
+              <div
+                class="flex items-center bg-[#f4fafa] w-full py-4 px-2 gap-3"
+              >
+                <img src="./assets/images/icon-dollar.svg" alt="" />
+                <input
+                  type="text"
+                  id="bill"
+                  class="bg-transparent outline-none text-right w-full"
+                />
+              </div>
+            </div>
+            <div class="flex flex-col gap-4">
+              <p>Select Tip %</p>
+              <div class="grid grid-cols-2 gap-3">
+                <div
+                  class="px-4 py-3 bg-[#002f34] text-white font-bold text-center rounded-md cursor-pointer tip-container"
+                >
+                  5%
+                </div>
+                <div
+                  class="px-4 py-3 bg-[#002f34] text-white font-bold text-center rounded-md cursor-pointer tip-container"
+                >
+                  10%
+                </div>
+                <div
+                  class="px-4 py-3 bg-[#002f34] text-white font-bold text-center rounded-md cursor-pointer tip-container"
+                >
+                  15%
+                </div>
+                <div
+                  class="px-4 py-3 bg-[#002f34] text-white font-bold text-center rounded-md cursor-pointer tip-container"
+                >
+                  25%
+                </div>
+                <div
+                  class="px-4 py-3 bg-[#002f34] text-white font-bold text-center rounded-md cursor-pointer tip-container"
+                >
+                  50%
+                </div>
+                <div class="w-full">
+                  <input
+                    type="text"
+                    placeholder="Custom"
+                    class="px-4 py-3 bg-[#c5e4e7] text-black w-full border-none outline-none rounded-md font-bold text-right"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-1 mt-4">
+              <div class="flex justify-between items-center">
+                <label for="people" class="text-[#5e7a7d]"
+                  >Number of People</label
+                >
+                <span class="error-msg display text-red-400"
+                  >Can't be zero</span
+                >
+              </div>
+              <div class="flex bg-[#f4fafa] items-center gap-4 px-2 py-3">
+                <img src="./assets/images/icon-person.svg" alt="" />
+                <input
+                  type="text"
+                  id="people"
+                  class="border-none outline-none bg-transparent w-full text-right font-bold"
+                  placeholder="No. of People"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="bg-[#002f34] text-white rounded-md mt-4 px-5 py-8 flex-1">
+            <div class="flex flex-col gap-5 md:justify-between h-full">
+              <div class="flex flex-col gap-4">
+                <div class="flex justify-between items-center">
+                  <p class="flex flex-col">
+                    <span>Tip Amount</span
+                    ><span class="text-[#5e7a7d]">/ person</span>
+                  </p>
+                  <p class="text-[#26B48F] font-bold text-3xl" id="amount">
+                    $0.00
+                  </p>
+                </div>
+                <div class="flex justify-between items-center">
+                  <p class="flex flex-col">
+                    <span>Total</span
+                    ><span class="text-[#5e7a7d]">/ person</span>
+                  </p>
+                  <p class="text-[#26B48F] font-bold text-3xl" id="total">
+                    $0.00
+                  </p>
+                </div>
+              </div>
+              <button
+                class="w-full bg-[#26B48F] p-2 rounded-md font-bold text-xl cursor-pointer hover:opacity-80"
+                id="reset"
+              >
+                RESET
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>

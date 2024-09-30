@@ -554,36 +554,20 @@ video {
   --tw-contain-style:  ;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
 .m-auto {
   margin: auto;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mb-\[-6rem\] {
-  margin-bottom: -6rem;
-}
-
-.mt-\[3rem\] {
-  margin-top: 3rem;
-}
-
-.mt-\[6rem\] {
-  margin-top: 6rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.-mt-16 {
-  margin-top: -4rem;
-}
-
 .mt-16 {
   margin-top: 4rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .block {
@@ -824,11 +808,19 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:text-\[2\.5rem\] {
+    font-size: 2.5rem;
   }
 }
